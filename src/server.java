@@ -13,7 +13,7 @@ public class server {
             String  inputLine;
 
             ServerSocket  serverSocket =new  ServerSocket(1088);
-            System.out.println("Server listen on" +serverSocket.getLocalPort());
+            System.out.println("Server listen on" +serverSocket.getLocalPort());//返回ServerSocket监听的，本机的IP地址上指定的端口号
 
             while(flag){
                 clientSocket = serverSocket.accept();
